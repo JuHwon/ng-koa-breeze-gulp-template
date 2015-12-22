@@ -1,0 +1,52 @@
+<md-dialog class="ri-login" aria-label="Login">
+    <form name="loginForm">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2>Login</h2>
+                <span flex></span>
+                <md-button class="md-icon-button mdi mdi-close"
+                           ng-click="vm.cancel()"
+                           ng-show="vm.canClose()"
+                           aria-label="Close Dialog"></md-button>
+            </div>
+        </md-toolbar>
+        <div class="md-padding" >
+            <div layout layout-sm="column">
+                <md-input-container flex >
+                    <!-- Use floating label instead of placeholder -->
+                    <label>
+                        <md-icon class="mdi mdi-account"></md-icon>
+                        Username
+                    </label>
+                    <input name="userName" ng-model="vm.username"
+                           type="text" >
+                </md-input-container>
+            </div>
+            <div layout layout-sm="column">
+                <md-input-container  flex  >
+                    <label>
+                        <md-icon class="mdi mdi-key"></md-icon>
+                        Password
+                    </label>
+                    <input name="password" ng-model="vm.password"
+                           type="password" >
+                </md-input-container>
+            </div>
+
+            <div layout layout-sm="column">
+                <md-button class="md-raised md-primary login"
+                           ng-disabled="!vm.canLogin()"
+                           ng-click="vm.login()"
+                           aria-label="Login" flex>
+                    Login
+                </md-button>
+            </div>
+
+            <div layout layout-sm="column">
+                <md-button class="forgot_password" ng-click="vm.forgotPassword()" flex>
+                    Forgot your password?
+                </md-button>
+            </div>
+        </div>
+    </form>
+</md-dialog>

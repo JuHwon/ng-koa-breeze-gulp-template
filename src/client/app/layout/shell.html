@@ -1,0 +1,12 @@
+<div ng-controller="ShellController as vm" id="shell" layout="column">
+    <header class="clearfix">
+        <ri-top-bar config="vm.config"></ri-top-bar>
+    </header>
+    <section layout="row" flex>
+        <ri-sidebar layout="column"></ri-sidebar>
+        <div class="content-area shuffle-animation" role="main" flex>
+            <ui-view ></ui-view>
+            <busy-indicator identifier="main"></busy-indicator>
+        </div>
+    </section>
+</div>

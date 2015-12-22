@@ -1,0 +1,9 @@
+<div class="busy-indicator" ng-show="vm.isBusy" >
+    <div class="page-splash-message">
+        <span ng-show="vm.showTitle">{{vm.title}}</span>
+    </div>
+    <div layout="row" layout-sm="column" layout-align="space-around">
+        <md-progress-circular class="md-accent" md-mode="indeterminate">
+        </md-progress-circular>
+    </div>
+</div>

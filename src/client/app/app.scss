@@ -1,0 +1,25 @@
+#main, #main > div, #shell {
+    height: 100%;
+}
+
+md-toolbar.md-small {
+    height: 48px;
+    min-height: 48px;
+    max-height: 48px;
+}
+
+md-toolbar.md-small .md-toolbar-tools md-menu {
+    padding: 0;
+}
+
+.primary-color {
+    color: $primary-color;
+}
+
+.secondary-color {
+    color: $secondary-color;
+}
+
+.secondary-800-color {
+    color: $secondary-800;
+}

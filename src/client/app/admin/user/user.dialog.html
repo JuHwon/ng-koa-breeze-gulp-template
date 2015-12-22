@@ -1,0 +1,53 @@
+<md-dialog aria-label="{{vm.title}}">
+<form>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2>{{vm.title}}</h2>
+            <span flex></span>
+            <md-button class="md-icon-button mdi mdi-close"
+                       ng-click="vm.reject()"
+                       aria-label="Close Dialog"></md-button>
+        </div>
+    </md-toolbar>
+    <div class="md-padding">
+        <div layout layout-sm="column">
+            <md-input-container flex>
+                <label>First Name</label>
+                <input ng-model="vm.user.firstName" data-z-validate>
+            </md-input-container>
+            <md-input-container flex>
+                <label>Last Name</label>
+                <input ng-model="vm.user.lastName" data-z-validate>
+            </md-input-container>
+        </div>
+
+        <div layout layout-sm="column">
+            <md-input-container flex>
+                <label>Username</label>
+                <input ng-model="vm.user.userName" data-z-validate>
+            </md-input-container>
+        </div>
+
+        <div layout layout-sm="column">
+            <md-input-container flex>
+                <label>E-Mail</label>
+                <input ng-model="vm.user.email" data-z-validate>
+            </md-input-container>
+        </div>
+
+        <div class="md-actions" layout="row">
+
+            <md-button ng-click="vm.reject()"
+                       aria-label="Cancel">
+                Cancel
+            </md-button>
+            <md-button ng-click="vm.save()"
+                       ng-disabled="!vm.canSave"
+                       aria-label="Save">
+                Save
+            </md-button>
+        </div>
+
+    </div>
+</form>
+</md-dialog>

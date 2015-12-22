@@ -1,0 +1,46 @@
+/// Blue Gray ///
+$primary-50: #ECEFF1;
+$primary-100: #CFD8DC;
+$primary-200: #B0BEC5;
+$primary-300: #90A4AE;
+$primary-400: #78909C;
+$primary-500: #607D8B;
+$primary-600: #546E7A;
+$primary-700: #455A64;
+$primary-800: #37474F;
+$primary-900: #263238;
+
+//Blue Gray does not have default A colors
+//$primary-A100: #A7FFEB;
+//$primary-A200: #64FFDA;
+//$primary-A400: #1DE9B6;
+//$primary-A700: #00BFA5;
+
+$primary-color: $primary-500;
+
+
+/// Amber ///
+$secondary-50: #FFF8E1;
+$secondary-100: #FFECB3;
+$secondary-200: #FFE082;
+$secondary-300: #FFD54F;
+$secondary-400: #FFCA28;
+$secondary-500: #FFC107;
+$secondary-600: #FFB300;
+$secondary-700: #FFA000;
+$secondary-800: #FF8F00;
+$secondary-900: #FF6F00;
+
+$secondary-A100: #FFE57F;
+$secondary-A200: #FFD740;
+$secondary-A400: #FFC400;
+$secondary-A700: #FFAB00;
+
+$secondary-color: $secondary-500;
+$accent-color: $secondary-A200;
+
+$color-good: #4CAF50;
+$color-medium: #FF9800;
+$color-bad: #F44336;
+$color-neutral: #9E9E9E;
+$color-info: #2196F3;

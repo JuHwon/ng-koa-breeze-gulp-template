@@ -1,0 +1,27 @@
+.ri-authentication{
+    font-size: 0.9em;
+
+    md-icon {
+        margin-top: 4px;
+        margin-right: -6px;
+    }
+
+    .ri-welcome-msg{
+        margin-right: 24px;
+    }
+
+    a, a md-icon {
+        color: $accent-color;
+    }
+}
+
+
+////////// Dialog
+
+.ri-login button.forgot_password.md-button {
+    font-size: 11px;
+}
+
+.ri-login md-icon{
+    padding-top: 5px;
+}

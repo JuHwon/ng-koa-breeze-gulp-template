@@ -1,0 +1,55 @@
+
+.sidebar {
+
+    md-sidenav {
+        height: 100%;
+    }
+
+    md-icon.mdi {
+        font-size: 24px;
+    }
+
+
+    md-list, md-sidenav {
+        padding: 0;
+
+        min-width: 0px;
+        width: auto;
+
+        button.md-no-style {
+            flex: none;
+            padding-right: 20px;
+        }
+    }
+
+
+
+    .active {
+        background-color: $primary-50;
+        md-icon {
+            color: $secondary-700;
+        }
+    }
+
+    button {
+        min-width: 10px;
+
+        .md-list-item-inner {
+            // this is a fix for IE so the content is aligned in center
+            // https://github.com/angular/material/issues/3764#issuecomment-123247328
+            height:48px;
+        }
+    }
+
+    md-toolbar.side-tool-header {
+        height: 100px;
+        background-color: $secondary-A400;
+        md-icon {
+            font-size: 60px;
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+}
+

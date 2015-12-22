@@ -1,0 +1,15 @@
+<div class="ri-authentication">
+    <div ng-show="!vm.isAuthenticated()">
+        <a href="#" ng-click="vm.showLogin()">
+            <md-icon class="mdi mdi-login"></md-icon>
+            Login
+        </a>
+    </div>
+    <div ng-show="vm.isAuthenticated()">
+        <span class="ri-welcome-msg">Welcome, {{vm.user}}</span>
+        <a href="#" ng-click="vm.logout()">
+            <md-icon class="mdi mdi-logout"></md-icon>
+            Logout
+        </a>
+    </div>
+</div>

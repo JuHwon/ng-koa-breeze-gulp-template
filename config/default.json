@@ -1,0 +1,20 @@
+{
+    "ldap" : {
+        "url": "",
+        "bindDn": "",
+        "bindCredentials": "",
+        "searchBase": ""
+    },
+    "jwt" : {
+        "token": "PG1]r>jBiJGiW@["
+    },
+    "database" : {
+        "host": "mssqlhost",
+        "dialect": "mssql",
+        "port": 1433,
+        "dbName": "dbname",
+        "user": "dbuser",
+        "password": "dbpw",
+        "instanceName": ""
+    }
+}

@@ -1,0 +1,27 @@
+<div class="sidebar"
+     flex layout="column">
+    <md-sidenav md-component-id="left" class="md-whiteframe-z2"
+                md-is-locked-open="$mdMedia('gt-md')"
+                layout="column" flexhide-gt-sm flex>
+        <md-toolbar class="side-tool-header" hide-gt-md>
+            <md-icon class="mdi mdi-code-array" ></md-icon>
+        </md-toolbar>
+
+        <md-list flex>
+            <md-list-item ng-repeat="r in vm.navRoutes"
+                          ng-click="vm.navigate(r)"
+                          ng-class="{ 'active' : vm.isCurrentOrChild(r) }">
+                <div>
+                    <md-icon class="mdi"
+                             ng-class="'mdi-' + r.settings.icon"></md-icon>
+                    <span hide-lg>
+                        {{r.settings.displayName}}
+                    </span>
+                    <md-tooltip hide show-lg md-direction="right">
+                        {{r.settings.displayName}}
+                    </md-tooltip>
+                </div>
+            </md-list-item>
+        </md-list>
+    </md-sidenav>
+</div>

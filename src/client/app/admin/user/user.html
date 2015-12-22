@@ -1,0 +1,28 @@
+<md-content class="md-padding" >
+
+    <md-list class="md-whiteframe-z2" style="margin-right: 95px; min-height: 50px; padding: 0;">
+
+        <md-list-item class="md-2-line"
+                      ng-repeat-start="user in vm.users"
+                      ng-click="vm.showEditDialog($event, user)">
+
+            <div class="md-list-item-text">
+                <h3>{{ user.userName }}</h3>
+                <p>{{ user.fullName }}</p>
+            </div>
+
+            <md-icon class="mdi mdi-delete md-secondary" style="font-size: 24px;"
+                     ng-click="vm.deleteUser($event, user)"
+                     aria-label="Delete User"></md-icon>
+
+        </md-list-item>
+        <md-divider ng-repeat-end></md-divider>
+
+    </md-list>
+
+    <md-button class="md-accent md-fab md-fab-bottom-right mdi mdi-account-plus"
+               style="font-size:24px;"
+               aria-label="Add User"
+               ng-click="vm.showEditDialog($event)"></md-button>
+
+</md-content>
